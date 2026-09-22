@@ -579,7 +579,7 @@ if __name__ == "__main__":
         "depth_min": 0.5,
         "depth_max": 3.0,
         "root_path": root_path,
-        "tf_file_path": "calibration/azure_tf.json",
+        "tf_file_path": "calibration/kinect_tf.json",
         "flipped": True,
         "gt_poses": True,
     }

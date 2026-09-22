@@ -120,7 +120,7 @@ Under configs/momasg.yaml adapt:
     - SAM2: `articulation.sam2_path` (optional)
 
 ## 🚀 Run
-Source the environment and run the engine.py:
+Source the environment, provide scene path `dataset.root_path` in `configs/momasg.yaml` and run the engine.py:
 ```bash
 source ~/.bashrc
 conda activate momasg
@@ -134,6 +134,10 @@ python moma_sg/graph/engine.py
 - [ ] add data
 - [ ] add evaluation routines
 - [ ] open-source sample outputs
+
+The exo- and robot-centric splits require modification to the `configs/momasg.yaml`:
+- MHZH/MHZH-EXO: `dataset.gt_poses: false` & `dataset.camera: kinect`
+- HSR split: `dataset.camera: hsr` and `dataset.gt_poses: true`
 
 For general questions regarding Arti4D, please refer to the [ArtiPoint paper](https://arxiv.org/abs/2509.01708).
 
