@@ -64,7 +64,7 @@ export LD_LIBRARY_PATH=$(echo $LD_LIBRARY_PATH | sed 's|/usr/local/cuda-12.1/lib
 ### 2. Install Semantic-SAM: 
 A. Clone Semantic-SAM fork that includes necessary adaptations to call it as a module within MoMa-SG:
 ```bash
-cd ~/MoMa-SG/ && git@github.com:martinbchnr/Semantic-SAM.git
+cd ~/MoMa-SG/ && git clone git@github.com:martinbchnr/Semantic-SAM.git
 cd Semantic-SAM/
 mkdir ckpt && cd ckpt
 wget https://github.com/UX-Decoder/Semantic-SAM/releases/download/checkpoint/swint_only_sam_many2many.pth
@@ -88,17 +88,23 @@ sh make.sh
 
 ### 3. Set up additional models
 Go to base MoMa-SG repo directory and run the following to download checkpoints for TapNext++, YOLO11, MobileSAM
+
+#### TapNext++ & YOLO11
 ```bash
 mkdir checkpoints && cd checkpoints
 wget --no-check-certificate https://storage.googleapis.com/dm-tapnet/tapnextpp/tapnextpp_ckpt.pt
 wget https://huggingface.co/Ultralytics/YOLO11/resolve/a01aaa06caeff788b052e193acb76b3f21571b3a/yolo11x-seg.pt?download=true 
+```
+
+#### MobileSAM
+```bash
 gdown --fuzzy https://drive.google.com/file/d/1dE-YAG-1mFCBmao2rHDp0n-PP4eH7SjE/view?usp=sharing
 unzip weight.zip
 mv weight/mobile_sam.pt .
 ```
+In case the server is unavailable, download the checkpoint [here](https://github.com/ChaoningZhang/MobileSAM/tree/master/weights), unzip it and move it to the same location as mentioned above.
 
-Set up GPT-5-mini by adding your API key:
-
+#### GPT-5-mini
 Run `nano configs/keys.yaml` and enter `openai_key: INSERT-YOUR-KEY-HERE`
 
 
