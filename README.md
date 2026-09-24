@@ -137,15 +137,21 @@ python moma_sg/graph/engine.py
 
 
 ## 🗄️ Arti4D-Semantic Benchmark
-- [ ] add data
-- [ ] add evaluation routines
-- [ ] open-source sample outputs
+Stay tuned!
 
 The exo- and robot-centric splits require modification to the `configs/momasg.yaml`:
 - MHZH/MHZH-EXO: `dataset.gt_poses: false` & `dataset.camera: kinect`
 - HSR split: `dataset.camera: hsr` and `dataset.gt_poses: true`
 
 For general questions regarding Arti4D, please refer to the [ArtiPoint paper](https://arxiv.org/abs/2509.01708).
+
+
+## ToDo List:
+- [x] inital code release
+- [ ] add Arti4D-Semantic benchmark
+- [ ] add evaluation routines
+- [ ] open-source sample outputs
+
 
 ## 🛠️ Citation
 
