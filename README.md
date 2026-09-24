@@ -93,7 +93,7 @@ Go to base MoMa-SG repo directory and run the following to download checkpoints 
 ```bash
 mkdir checkpoints && cd checkpoints
 wget --no-check-certificate https://storage.googleapis.com/dm-tapnet/tapnextpp/tapnextpp_ckpt.pt
-wget https://huggingface.co/Ultralytics/YOLO11/resolve/a01aaa06caeff788b052e193acb76b3f21571b3a/yolo11x-seg.pt?download=true 
+wget https://huggingface.co/Ultralytics/YOLO11/resolve/a01aaa06caeff788b052e193acb76b3f21571b3a/yolo11x-seg.pt
 ```
 
 #### MobileSAM
