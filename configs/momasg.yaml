@@ -153,7 +153,7 @@ cache:
   save_hierarchy: true
   return_after_mapping: false
   return_after_tracking: false
-  return_after_articulation: true
+  return_after_articulation: false
   return_after_assoc: false
 
 hydra:
