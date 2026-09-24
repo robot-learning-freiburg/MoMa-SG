@@ -47,7 +47,7 @@ einops==0.8.2
 einshape==1.0
 etils==1.14.0
 executing==2.2.1
-faiss==1.14.3
+faiss-cpu==1.15.1
 fastapi==0.136.1
 fastjsonschema==2.21.2
 ffmpy==1.0.0
