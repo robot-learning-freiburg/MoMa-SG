@@ -140,21 +140,31 @@ python moma_sg/graph/engine.py
 
 
 ## 🗄️ Arti4D-Semantic Benchmark
-Stay tuned!
+- Please download the following splits of the dataset including the metadata using `wget` or follow the download buttons on our [project site](https://momasg.cs.uni-freiburg.de)
+- Create a dataset dir such as `path/to/artti4d-sem/`
+- Unzip each file at this location to maintain the correct folder structure.
+
+```bash
+wget https://momasg.cs.uni-freiburg.de/download/arti4d/raw/metadata.zip
+wget https://momasg.cs.uni-freiburg.de/download/arti4d/raw/rh201.zip
+wget https://momasg.cs.uni-freiburg.de/download/arti4d/raw/rh078.zip
+wget https://momasg.cs.uni-freiburg.de/download/arti4d/raw/rr080.zip
+wget https://momasg.cs.uni-freiburg.de/download/arti4d/raw/din080.zip
+wget https://momasg.cs.uni-freiburg.de/download/arti4d/raw/mhzh.zip
+wget https://momasg.cs.uni-freiburg.de/download/arti4d/raw/mhzh_exo.zip
+wget https://momasg.cs.uni-freiburg.de/download/arti4d/raw/hsr.zip
+```
 
 The exo- and robot-centric splits require modification to the `configs/momasg.yaml`:
 - MHZH/MHZH-EXO: `dataset.gt_poses: false` & `dataset.camera: kinect`
 - HSR split: `dataset.camera: hsr` and `dataset.gt_poses: true`
 
-For general questions regarding Arti4D, please refer to the [ArtiPoint paper](https://arxiv.org/abs/2509.01708).
-
+For general questions regarding Arti4D-Semantic/Arti4D, refer to the appendix of the [MoMa-SG paper](https://arxiv.org/abs/2602.16356) or the predecessor [ArtiPoint](https://arxiv.org/abs/2509.01708). If you are in doubt, don't hesitate to send an e-mail.
 
 ## ToDo List:
 - [x] inital code release
-- [ ] add Arti4D-Semantic benchmark
+- [x] add Arti4D-Semantic benchmark
 - [ ] add evaluation routines
-- [ ] open-source sample outputs
-
 
 ## 🛠️ Citation
 
