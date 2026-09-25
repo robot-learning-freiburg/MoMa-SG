@@ -102,7 +102,7 @@ gdown --fuzzy https://drive.google.com/file/d/1dE-YAG-1mFCBmao2rHDp0n-PP4eH7SjE/
 unzip weight.zip
 mv weight/mobile_sam.pt .
 ```
-In case the server is unavailable, download the checkpoint [here](https://github.com/ChaoningZhang/MobileSAM/tree/master/weights), unzip it and move it to the same location as mentioned above.
+In case the file is unavailable, download the checkpoint [here](https://github.com/ChaoningZhang/MobileSAM/tree/master/weights), unzip it and move it to the same location as mentioned above.
 
 #### GPT-5-mini
 Run `nano configs/keys.yaml` and enter `openai_key: INSERT-YOUR-KEY-HERE`
@@ -126,7 +126,10 @@ Under configs/momasg.yaml adapt:
     - SAM2: `articulation.sam2_path` (optional)
 
 ## 🚀 Run
-Source the environment, provide scene path `dataset.root_path` in `configs/momasg.yaml` and run the engine.py:
+1. Define necessary paths in configs/momasg.yaml:
+    - `dataset.root_path` needs to point to a sequence folder
+    - 
+3. Source the environment and run engine.py, provide scene path `dataset.root_path` in `configs/momasg.yaml` :
 ```bash
 source ~/.bashrc
 conda activate momasg
