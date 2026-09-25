@@ -164,7 +164,8 @@ For general questions regarding Arti4D-Semantic/Arti4D, refer to the appendix of
 ## ToDo List:
 - [x] inital code release
 - [x] add Arti4D-Semantic benchmark
-- [ ] add evaluation routines
+- [x] add evaluation routines
+- [ ] see [issues](https://github.com/robot-learning-freiburg/MoMa-SG/issues)
 
 ## 🛠️ Citation
 
