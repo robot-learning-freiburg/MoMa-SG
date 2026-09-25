@@ -141,18 +141,18 @@ python moma_sg/graph/engine.py
 
 ## 🗄️ Arti4D-Semantic Benchmark
 - Please download the following splits of the dataset including the metadata using `wget` or follow the download buttons on our [project site](https://momasg.cs.uni-freiburg.de)
-- Create a dataset dir such as `path/to/artti4d-sem/`
+- Create a dataset dir such as `path/to/arti4dsem/`
 - Unzip each file at this location to maintain the correct folder structure.
 
 ```bash
-wget https://momasg.cs.uni-freiburg.de/download/arti4d/raw/metadata.zip
-wget https://momasg.cs.uni-freiburg.de/download/arti4d/raw/rh201.zip
-wget https://momasg.cs.uni-freiburg.de/download/arti4d/raw/rh078.zip
-wget https://momasg.cs.uni-freiburg.de/download/arti4d/raw/rr080.zip
-wget https://momasg.cs.uni-freiburg.de/download/arti4d/raw/din080.zip
-wget https://momasg.cs.uni-freiburg.de/download/arti4d/raw/mhzh.zip
-wget https://momasg.cs.uni-freiburg.de/download/arti4d/raw/mhzh_exo.zip
-wget https://momasg.cs.uni-freiburg.de/download/arti4d/raw/hsr.zip
+wget https://momasg.cs.uni-freiburg.de/download/arti4dsem/raw/metadata.zip
+wget https://momasg.cs.uni-freiburg.de/download/arti4dsem/raw/rh201.zip
+wget https://momasg.cs.uni-freiburg.de/download/arti4dsem/raw/rh078.zip
+wget https://momasg.cs.uni-freiburg.de/download/arti4dsem/raw/rr080.zip
+wget https://momasg.cs.uni-freiburg.de/download/arti4dsem/raw/din080.zip
+wget https://momasg.cs.uni-freiburg.de/download/arti4dsem/raw/mhzh.zip
+wget https://momasg.cs.uni-freiburg.de/download/arti4dsem/raw/mhzh_exo.zip
+wget https://momasg.cs.uni-freiburg.de/download/arti4dsem/raw/hsr.zip
 ```
 
 The exo- and robot-centric splits require modification to the `configs/momasg.yaml`:
